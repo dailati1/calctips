@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+        <!-- LINKS -->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/calcisshortforcalculator.png?v=1747519739317"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+    
+    
+    <!-- SCRIPTS -->
+<!--     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4723023059013068"
+     crossorigin="anonymous"></script> -->
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+    
+    
+    <title>Areas & Volumes - CalcTips</title>
+
+    <!--     FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+        
+  </head>
+  <body>
+    
+      
+    <!--     NAVBAR -->
+    
+    <!-- NAVBAR how to make it work :< -->
+    <nav class="navbar navbar-expand-sm text-white bg-opacity-100">
+      <div class="container-fluid">
+        
+        <!-- SMALL MONITOR -->
+        <button
+          class="navbar-toggler navbar-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR FOR SMALL MONITOR -->
+        <div class="toggler-navbar" id="navbarSupportedContent">
+          <a href="index.html" class="text-center"> home </a>
+          <a href="about.html" class="text-center"> about </a>
+          <a href="theorems.html" class="text-center"> theorems </a>
+          <a href="derivative.html" class="text-center"> derivatives </a>
+          <a href="integral.html" class="text-center"> integrals </a>
+          <a href="appliedintegral.html" class="text-center"> areas & volumes </a>
+        </div>
+
+        <!-- START -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <!-- MAIN -->
+          <ul class="navbar-nav mb-lg-0">
+            <!-- HOME BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="index.html">home</a>
+            </li>
+            <!-- ABOUT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="about.html">about</a>
+            </li>
+
+            <!-- THEOREMS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="theorems.html">theorems</a>
+            </li>
+            
+            <!-- DERIVATIVES BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="derivative.html">derivatives</a>
+            </li>
+            
+            <!-- INTEGRALS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="integral.html">integrals</a>
+            </li>
+            
+            <!-- APPLIED INT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="appliedintegral.html">areas & volumes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--     NAVBAR ENDS -->
+    
+    <!--     HEADER -->
+<!--     brief desc of the topic -->
+    <section class="toppart">
+      <div class="container d-flex justify-content-center align-items-center">
+        <h1 class="bigtext">
+          areas & volumes
+        </h1>
+      </div>
+    </section>
+    <div class="container-fluid align-items-center justify-content-center bigdescbox">
+        <p class="bigdesc" style="letter-spacing: 0.5px">
+          Applied integrals use integration to find areas and volumes in geometric contexts. You can find the area between two curves by subtracting the lower function from the upper one. For volumes, you use methods like the disk and washer methods, which revolve a region around an axis to create a solid. Volume by cross sections involves stacking known shapes along a curve. These techniques help turn 2D graphs into meaningful 3D measurements.
+        </p>
+    </div>
+    <section class="mt-4">
+        <h2 class="disclaimer">
+          READ
+        </h2>
+      <div class="container-fluid d-flex align-items-center justify-content-center disclaimerbox">
+
+        <p class="disclaimertext" style="letter-spacing: 0.5px">
+          Recommended to have learned integrals before reading!
+        </p>
+      </div>
+    </section>
+
+    <!--     HEADER ENDS -->
+    <section class="cool-container">
+      <nav class="nav-container">
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+
+      </nav>
+      
+      <div class="nav-redirects">
+        <div id="area-btwn-curves">
+          <h4>Area Between Two Curves</h4>
+          <p>When you have <span style="font-weight:bold;">two functions</span>, one on top of the other, the <span style="font-weight:bold;">area between their graphs</span> over an interval can be found using <span style="font-weight:bold;">integration</span>.</p>
+          <p>This method finds the <span style="font-weight:bold;">net vertical distance</span> between the two curves and adds it up across an interval.</p>
+          <p style="text-decoration:underline;">General Formula (Vertical Slices):</p>
+          <p>If <i>f(x) &ge; g(x)</i> on the interval <i>[a, b]</i>, then the area between the curves is:</p>
+          <p style="text-align:center;">Area<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>a</mi>          <!-- Lower limit -->
+                  <mi>b</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo>[</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>-</mo>
+              <mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>]</mo><mo>d</mo><mi>x</mi>
+            </mrow>
+            </math>
+          </p>
+          <ul>
+            <li><i>f(x)</i>: top function</li>
+            <li><i>g(x)</i>: bottom function</li>
+            <li><i>[a,b]</i>: interval on the x-axis</li>
+          </ul>
+          
+          <ul>
+            <li>At each point, <i>f(x) - g(x)</i> gives the <span style="font-weight:bold;">vertical gap</span> between the curves.</li>
+            <li>Integration adds up all those little slices from left to right.</li>
+          </ul>
+          
+          <p> This is what it looks like: </p>
+          <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;" src="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/verticalintregate.png?v=1748436328316"/>
+          <p style="font-weight:bold;">What It Represents:</p>
+          
+          <p style="text-decoration:underline;">Horizontal Slices (in terms fo <i>y</i>):</p>
+          <p>If the functions are described as <i>x = f(y)</i> and <i>x = g(y)</i>, and
+          you're integrating <span style="font-weight:bold;">horizontally</span>, then:</p>
+          <p style="text-align:center;">Area<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>c</mi>          <!-- Lower limit -->
+                  <mi>d</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo>[</mo><mi>f</mi><mo>(</mo><mi>y</mi><mo>)</mo><mo>-</mo>
+              <mi>g</mi><mo>(</mo><mi>y</mi><mo>)</mo><mo>]</mo><mo>d</mo><mi>y</mi>
+            </mrow>
+            </math>
+          </p>
+          <ul>
+            <li><i>f(y)</i>: <span style="font-weight:bold;">rightmost</span> function</li>
+            <li><i>g(y)</i>: <span style="font-weight:bold;">leftmost</span> function</li>
+            <li><i>[c,d]</i>: interval on the y-axis</li>
+          </ul>
+          
+          <p> This is what it looks like: </p>
+          <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;" src="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/horizotnalignetaton-removebg-preview.png?v=1748442087412"/>
+          
+          <p style="font-weight:bold;">When to Use Each:</p>
+          <ul>
+            <li>Use <span style="font-weight:bold;">vertical slices</span> if curves are functions of <i>x</i> (standard case).</li>
+            <li>Use <span style="font-weight:bold;">horizontal slices</span> if curves are easier to express as functions of <i>y</i>
+            or if they <span style="font-weight:bold;">switch top/bottom</span> but not left/right.</li>
+          </ul>
+          <p> Here's the visualization: </p>
+          <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;" src="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/verticalvhorizontal-removebg-preview.png?v=1748436035751"/>
+          
+          <p style="font-weight:bold;">Tips:</p>
+          <ul>
+            <li>Always <span style="font-weight:bold;">graph the functions</span> if you're unsure which is on top!</li>
+            <li>If curves <span style="font-weight:bold;">cross</span>, you may need to
+            <span style="font-weight:bold;">split the interval</span> into parts.</li>
+          </ul>
+                    <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+
+        </div>
+        <div id="video">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LlkfKwt8kr4?si=s__lyeCks29Usvh9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        
+        <div id="disk-washer-methods">
+          <h4>Disk Method / Washer Method</h4>
+          <p>
+            The <span style="font-weight:bold;">disk and washer methods</span> are techniques used in integral calculus to find the 
+            <span style="font-weight:bold;">volume of a solid of revolution</span>——a 3D shape formed by rotating a region around an axis. These methods take advantage of slicing the solid into thin circular cross-sections. 
+            The <span style="font-weight:bold;">disk method</span> applies when the solid has no hole in the middle, using solid disks as slices. 
+            The <span style="font-weight:bold;">washer method</span> is used when there’s a hole, and the slices look like washers (disks with holes). Both methods involve integrating the area of these circular slices across the interval of rotation.
+          </p>
+                    <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+
+        </div>
+        
+        <div id="washer">
+          <h4 style="color: black; font-size:1.3rem; text-align:center; margin-top: 10px;">The Washer Method</h4>
+          
+          <p>The <span style="font-weight:bold;">washer method</span> is used to find the
+          <span style="font-weight:bold;">volume of a solid of revolution</span> when the region being revolved
+          <span style="font-weight:bold;">does not touch</span> the axis of revolution.
+          This creates a solid with a "hole" in the middle, resembling a washer.</p>
+         
+          <p style="text-decoration:underline;">General Formula (Rotation about the <i>x-axis</i>):</p>
+          <p>If the outer radius is <i>R(x)</i> and the inner radius is <i>r(x)</i> on the interval [a,b], the volume is:</p>
+          <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo><mi>&pi;</mi>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>a</mi>          <!-- Lower limit -->
+                  <mi>b</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo>(</mo>
+              <msup><mrow><mo>[</mo><mi>R</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>-</mo>
+              <msup><mrow><mo>[</mo><mi>r</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>]</mo></mrow><mn>2</mn></msup>
+              <mo>)</mo>
+              <mo>d</mo><mi>x</mi>
+            </mrow>
+            </math>
+          </p>
+          <ul>
+            <li><i>R(x)</i>: distance from the axis of revolution to the <span style="font-weight:bold;">outer</span> boundary of the region.</li>
+            <li><i>r(x)</i>: distance from the axis of revolution to the <span style="font-weight:bold;">inner</span> boundary of the region.</li>
+            <li><i>[a,b]</i>: interval on the x-axis</li>
+          </ul>
+          
+          <p style="font-weight:bold;">What It Represent:</p>
+          <ul>
+            <li>At each <i>x</i>, <i>&pi;[R(x)]<sup>2</sup></i> is the area of the outer disk.</li>
+            <li>At each <i>x</i>, <i>&pi;[r(x)]<sup>2</sup></i> is the area of the inner "hole".</li>
+              <li>The difference gives the area of the washer at that <i>x</i></li>
+              <li>Integration adds up the volumes of these infinitesimally thin washers.</li>
+          </ul>
+          <p style="font-weight:bold;">Rotation about the y-axis:</p>
+          <p>If the outer radius is <i>R(y)</i> and the inner radius is <i>r(y)</i> on the interval <i>[c,d]</i>, the volume is:</p>
+          <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo><mi>&pi;</mi>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>c</mi>          <!-- Lower limit -->
+                  <mi>d</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo>(</mo>
+              <msup><mrow><mo>[</mo><mi>R</mi><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mn>2</mn></msup><mo>-</mo>
+              <msup><mrow><mo>[</mo><mi>r</mi><mo>(</mo><mi>y</mi><mo>)</mo><mo>]</mo></mrow><mn>2</mn></msup>
+              <mo>)</mo>
+              <mo>d</mo><mi>y</mi>
+            </mrow>
+            </math>
+          </p>
+          <ul>
+            <li><i>R(y)</i>: distance from the axis of revolution to the <span style="font-weight:bold;">outer</span> boundary (as a function of <i>y</i>).</li>
+            <li><i>r(y)</i>: distance from the axis of revolution to the <span style="font-weight:bold;">inner</span> boundary (as a function of <i>y</i>).</li>
+            <li><i>[c,d]</i>: interval on the y-axis</li>
+          </ul>
+          <p style="font-weight:bold;">When to Use:</p>
+          <p>Use the washer method when the region being revolved has a <span style="font-weight:bold;">gap</span> between it and the axis of revolution.</p>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        
+        </div>
+        
+        <div id="video1">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dN7mS08yrc8?si=sq9WjpoMtOZBkYaG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        
+        </div>
+        <div id="disk">
+          <h4 style="color: black; font-size:1.3rem; text-align:center; margin-top: 10px;">The Disk Method</h4>
+          
+          <p>The <span style="font-weight:bold;">disk method</span> is a special case of the washer
+          method used when the region being revolved is <span style="font-weight:bold;">flush against</span> the axis of revolution.
+          The resulting solid is "solid" with no hole through the middle.</p>
+         
+          <p style="text-decoration:underline;">General Formula (Rotation about the <i>x-axis</i>):</p>
+          <p>If the radius of the disk at <i>x</i> is <i>R(x)</i> on the interval <i>[a,b]</i>, the volume is:</p>
+          <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo><mi>&pi;</mi>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>a</mi>          <!-- Lower limit -->
+                  <mi>b</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo>(</mo>
+              <msup><mrow><mo></mo><mi>R</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mn>2</mn></msup>
+              <mo>)</mo>
+              <mo>d</mo><mi>x</mi>
+            </mrow>
+            </math>
+          </p>
+          <ul>
+            <li><i>R(x)</i>: distance from the axis of revolution to the boundary of the region.</li>
+            <li><i>[a,b]</i>: interval on the x-axis</li>
+          </ul>
+          
+          <p style="font-weight:bold;">What It Represents:</p>
+          <ul>
+            <li>At each <i>x</i>, <i>&pi;[R(x)]<sup>2</sup></i> is the area of a circular disk.</li>
+              <li>Integration adds up the volumes of these infinitesimally thin disks.</li>
+          </ul>
+          <p style="font-weight:bold;">Rotation about the y-axis:</p>
+          <p>If the radius of the disk at <i>y</i> is <i>R(y)</i> on the interval <i>[c,d]</i>, the volume is:</p>
+          <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo><mi>&pi;</mi>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>c</mi>          <!-- Lower limit -->
+                  <mi>d</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo>(</mo>
+              <msup><mrow><mi>R</mi><mo>(</mo><mi>y</mi><mo>)</mo></mrow><mn>2</mn></msup>
+              <mo>)</mo>
+              <mo>d</mo><mi>y</mi>
+            </mrow>
+            </math>
+          </p>
+          <ul>
+            <li><i>R(y)</i>: distance from the axis of revolution to the boundary (as a function of <i>y</i>).</li>
+            <li><i>[c,d]</i>: interval on the y-axis</li>
+          </ul>
+          <p style="font-weight:bold;">When to Use:</p>
+          <p>Use the disk method when the region being revolved is <span style="font-weight:bold;">directly adjacent</span> to the axis of revolution.
+          In this case, the "inner radius" of the washer method becomes zero.</p>
+          <p style="font-weight:bold;">Connection:</p>
+          <p>Notice that if <i>r(x) = 0</i> in the washer method formula, you get the disk method formula.
+          The disk method is essentially the washer method where the inner radius is zero.</p>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        
+        </div>
+        
+        
+        <div id="video2">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe width="1124" height="632" src="https://www.youtube.com/embed/SAHSVg7Jw_A" title="Disk &amp; Washer Method - Calculus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
+        </div>
+        
+        
+        
+        
+        <div id="vol-by-cross-sections">
+          <h4>Volume By Cross-Sections</h4>
+          
+          <p>This method calculates the volume of a 3D solid by knowing the <span style="font-weight:bold;">area of 
+            its cross-sections</span> perpendicular to a given axis (either the <i>x</i> or <i>y</i>-axis). 
+            Imagine slicing the solid into many thin "slabs." If you know the area of 
+            each slab's face and its thickness, you can find the total volume by 
+            integrating these areas over the length of the solid.</p>
+
+          <p><b>General Formula (Cross-sections perpendicular to the <i>x</i>-axis):</b></p>
+          <p>If the area of the cross-section at a given <i>x</i> is <i>A(x)</i>, and the solid extends from <i>x=a</i> to <i>x=b</i>, then the volume <b>V</b> is:</p>
+          <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>a</mi>          <!-- Lower limit -->
+                  <mi>b</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo></mo><mi>A</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              <mo>d</mo><mi>x</mi>
+            </mrow>
+            </math>
+          </p>
+
+          <ul>
+            <li><i>A(x)</i>: the area of the cross-section at a specific <i>x</i>-value.</li>
+            <li><i>dx</i>: the infinitesimal thickness of the cross-section.</li>
+            <li><i>[a,b]</i>: the interval on the <i>x</i>-axis over which the solid extends.</li>
+          </ul>
+          
+          <p><b>General Formula (Cross-sections perpendicular to the <i>y</i>-axis):</b></p>
+          <p>If the area of the cross-section at a given <i>y</i> is <i>A(y)</i>, and the solid extends from <i>y=c</i> to <i>y=d</i>, then the volume <b>V</b> is:</p>
+          <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>c</mi>          <!-- Lower limit -->
+                  <mi>d</mi>          <!-- Upper limit -->
+                </msubsup>
+              <mo></mo><mi>A</mi><mo>(</mo><mi>y</mi><mo>)</mo>
+              <mo>d</mo><mi>y</mi>
+            </mrow>
+            </math>
+          </p>
+
+          <ul>
+            <li><i>A(y)</i>: the area of the cross-section at a specific <i>y</i>-value.</li>
+            <li><i>dy</i>: the infinitesimal thickness of the cross-section.</li>
+            <li><i>[c,d]</i>: the interval on the y-axis over which the solid extends.</li>
+          </ul>
+<!--           <p>When the cross-sections are perpendicular to the y-axis, the formula is the nearly the same as the preceding. Specifically, switch x for y and integrate the y-values in ascending order</p> -->
+          <p><b>Steps to Find the Volume:</b></p>
+          <ol>
+            <li><b>Visualize the Solid and the Base:</b> Understand the region that forms the base of the solid.</li>
+            <li><b>Determine the Orientation of Cross-Sections:</b> Are they perpendicular to the <i>x</i>-axis or the <i>y</i>-axis? This will dictate whether you integrate with respect to <i>x</i> or <i>y</i>.</li>
+            <li><b>Find the Area of a General Cross-Section, <i>A(x)</i> or <i>A(y)</i>:</b> This is the crucial step. The shape of the cross-section (square, triangle, semicircle, etc.) will determine how you calculate its area. The dimensions of this shape will be related to the boundaries of the base region.</li>
+            <li><b>Determine the Limits of Integration:</b> Find the range of <i>x</i> or <i>y</i> values over which the solid extends.</li>
+            <li><b>Set Up and Evaluate the Integral:</b> Use the appropriate formula and integrate <i>A(x)</i> or <i>A(y)</i> over the determined limits.</li>
+
+          </ol>
+          <p><b>Example:</b></p>
+          <p>Consider a solid whose base is the region bounded by <i>y=&#8730;<span style="border-top: 1px solid black;">x</span></i>, the <i>x</i>-axis, and <i>x=4</i>. The cross-sections perpendicular to the <i>x</i>-axis are squares. Find the volume of this solid.</p>
+          <ol>
+            <li><b>Base</b>: Region under <i>y</i>=<i><span>&#8730;</span><span style="border-top: 1px solid black;">x</span></i> from <i>x=0</i> to <i>x=4</i>.</li>
+            <li><b>Orientation</b>: Perpendicular to the <i>x</i>-axis, so we'll integrate with respect to <i>x</i>.</li>
+            <li><b>Area <i>A(x)</i></b>: The side of each square cross-section extends from the <i>x</i>-axis to the curve y=<i><span>&#8730;</span><span style="border-top: 1px solid black;">x</span></i>. So, the side length of the square is <i>s=</i><i><span>&#8730;</span><span style="border-top: 1px solid black;">x</span></i>. The area of the square is <i>A(x)=s<sup>2</sup>=(<span>&#8730;</span><span style="border-top: 1px solid black;">x</span>)<sup>2</sup>=x</i>.</li>
+            <li><b>Limits</b>: The solid extends from <i>x=0</i> to <i>x=4</i>.</li>
+<!--             :D-->
+            <li><b>Integral</b>:
+              <p style="text-align:center;">Volume
+               <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                  <mo>=</mo>
+                    <msubsup>
+                      <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                      <mi>0</mi>          <!-- Lower limit -->
+                      <mi>4</mi>          <!-- Upper limit -->
+                    </msubsup>
+                  <msup><mrow><mo></mo><mi>A</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></msup>
+                  <mo>d</mo><mi>x</mi>
+                </mrow>
+               <mrow>
+                  <mo>=</mo>
+                    <msubsup>
+                      <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                      <mi>0</mi>          <!-- Lower limit -->
+                      <mi>4</mi>          <!-- Upper limit -->
+                    </msubsup>
+                  <msup><mi>x</mi></msup>
+                  <mo>d</mo><mi>x</mi>
+               </mrow>
+               </math>
+              </p>
+            </li>
+            <li><b>Evaluating the integral</b>: 
+              <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+                <mrow>
+                  <mo>=</mo>
+                  <msubsup>
+                  <mrow>
+                    <mo>[</mo><mfrac><mrow><msup><mi>x</mi><mn>2</mn></msup>
+                    </mrow><mn>2</mn></mfrac>
+                    <mo>]</mo>
+                  </mrow>
+                  <mn>0</mn>
+                  <mn>4</mn>
+                  </msubsup>
+                </mrow>
+                <mrow>
+                  <mo>=</mo>
+                  <msubsup>
+                  <mrow>
+                    <mo>(</mo>
+                    <mfrac><mrow><msup><mn>4</mn><mn>2</mn></msup>
+                    </mrow><mn>2</mn></mfrac>
+                    <mo>)</mo>
+                    <mo>-</mo><mo>(</mo>
+                    
+                    <mfrac><mrow><msup><mn>0</mn><mn>2</mn></msup>
+                    </mrow><mn>2</mn></mfrac><mo>)</mo>
+                    <mo>=</mo>
+                    
+                    <mfrac><mrow><msup><mn>16</mn></msup>
+                    </mrow><mn>2</mn></mfrac>
+                    <mo>=</mo>
+                    <mn>8</mn>
+                    </mrow>
+                  </msubsup>
+                
+                </mrow>
+                </math>
+              </p></li>
+          </ol>
+          <p>The volume of the solid is 8 cubic units.</p>
+           <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">          
+        </div>
+        <div id="video3">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe width="1124" height="632" src="https://www.youtube.com/embed/4vLy5VoUcQE" title="Volume with cross sections: intro | Applications of integration | AP Calculus AB | Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
+        </div>
+        <div id='additional'>
+          <h4>Additional information</h4>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">          
+
+        </div>
+        <div id='shell-method'>
+          <h4 style='color:black; font-size:1.3rem; text-align:center; margin-top: 10px;'>Shell Method</h4>
+          <p>The <b>shell method</b> is another technique to find the <b>volume of a solid of revolution</b>. Instead of slicing the solid perpendicular to the axis of revolution (like in the disk/washer method), here we slice <b>parallel</b> to the axis of revolution, creating thin cylindrical "shells."</p>
+          <p><b>General Formula (Rotation about the y-axis):</b></p>
+          <p>If a region is bounded by <i>y</i>=<i>f(x)</i>, the x-axis, and the lines <i>x</i>=<i>a</i> and <i>x</i>=<i>b</i> (where a≥0), and it's revolved about the y-axis, the volume is:</p>
+          <p style="text-align:center;">Volume
+           <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>2<mi>&pi;</mi>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>a</mi>          <!-- Lower limit -->
+                  <mi>b</mi>          <!-- Upper limit -->
+                </msubsup>
+              <msup><mrow><mi>x</mi>⋅<mo></mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></msup>
+              <mo>d</mo><mi>x</mi>
+            </mrow>
+           </math>
+          </p>
+          <ul>
+            <li>x: the radius of the cylindrical shell (distance from the y-axis).</li>
+            <li>f(x): the height of the cylindrical shell.</li>
+            <li>dx: the infinitesimal thickness of the shell.</li>
+            <li>[a,b]: the interval on the x-axis.</li>
+          </ul>
+          <p><b>General Formula (Rotation about the x-axis):</b></p>
+          <p>If a region is bounded by <i>x</i>=<i>g(y)</i>, the y-axis, and the lines <i>y</i>=<i>c</i> and <i>y</i>=<i>d</i> (where c≥0), and it's revolved about the x-axis, the volume is:</p>
+          <p style="text-align:center;">Volume
+           <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>2<mi>&pi;</mi>
+                <msubsup>
+                  <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                  <mi>c</mi>          <!-- Lower limit -->
+                  <mi>d</mi>          <!-- Upper limit -->
+                </msubsup>
+              <msup><mrow><mi>y</mi>⋅<mo></mo><mi>g</mi><mo>(</mo><mi>y</mi><mo>)</mo></mrow></msup>
+              <mo>d</mo><mi>y</mi>
+            </mrow>
+           </math>
+          </p>
+          <ul>
+            <li>y: the radius of the cylindrical shell (distance from the x-axis).</li>
+            <li>g(y): the height of the cylindrical shell.</li>
+            <li>dy: the infinitesimal thickness of the shell.</li>
+            <li>[c,d]: the interval on the x-axis.</li>
+          </ul>
+
+            <p><b>What It Represents:</b></p>
+          <ul>
+            <li>Imagine a thin vertical strip at a particular <i>x</i>. When revolved about the y-axis, it forms a cylindrical shell with radius approximately <i>x</i>, height approximately <i>f(x)</i>, and a small thickness <i>dx</i>.</li>
+            <li>The surface area of this cylindrical shell (if laid flat) would be approximately <i>2πx</i>⋅<i>f(x)</i>.</li>
+            <li>Multiplying by the thickness dx gives the approximate volume of that shell: <i>2πx</i>⋅<i>f(x)</i>⋅<i>dx</i>.</li>
+            <li>Integration sums the volumes of these infinitesimally thin shells across the interval [<i>a</i>,<i>b</i>].</li>
+          </ul>
+          <p>The logic is similar for rotation about the x-axis, just with the roles of <i>x</i> and <i>y</i> (and <i>f</i> and <i>g</i>) swapped appropriately.</p>
+            <p><b>When to Use:</b></p>
+          <p>The shell method is particularly useful when:</p>
+          <ul>
+            <li>The axis of revolution is parallel to the slicing direction.</li>
+            <li>The function is easier to integrate with respect to the variable that is parallel to the axis of revolution.</li>
+            <li>The disk/washer method would require solving for the inverse function, which might be difficult.</li>
+          </ul>
+            <p><b>Example:</b></p>
+          <p>Find the volume of the solid generated by revolving the region bounded by y=<math><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math>, y=0, and x=1 about the y-axis.</p>
+          <ul>
+
+            <li><b>Identify the function and interval:</b> f(x)=<math><mrow><msup><mi>x</mi><mn>2</mn></msup></mrow></math>, interval [0,1].</li>
+            <li><b>Axis of revolution:</b> y-axis.</li>
+            <li><b>Set up the integral (using the formula for rotation about the y-axis):</b></li>
+            <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mo>=</mo>2<mi>&pi;</mi>
+                  <msubsup>
+                    <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                    <mi>0</mi>          <!-- Lower limit -->
+                    <mi>1</mi>          <!-- Upper limit -->
+                  </msubsup>
+                <mo></mo><mi>x</mi>⋅<mrow><msup><mi>x</mi><mn>2</mn></msup></mrow>
+                <mo>d</mo><mi>x</mi>
+              </mrow>
+              <mrow>
+                <mo>=</mo>2<mi>&pi;</mi>
+                  <msubsup>
+                    <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                    <mi>0</mi>          <!-- Lower limit -->
+                    <mi>1</mi>          <!-- Upper limit -->
+                  </msubsup>
+                <mo></mo><mrow><msup><mi>x</mi><mn>3</mn></msup></mrow>
+                <mo>d</mo><mi>x</mi>
+              </mrow>
+              </math>
+            </p>
+            <li><b>Evaluate the integral:</b></li>
+            <p style="text-align:center;">Volume<math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+
+              <mrow>
+                <mo>=</mo>2<mi>&pi;</mi>
+                <msubsup>
+
+                  <mrow>
+                    <mo>[</mo><mfrac><mrow><mrow><msup><mi>x</mi><mn>4</mn></msup></mrow>
+                    </mrow><mn>4</mn></mfrac>
+                    <mo>]</mo>
+                  </mrow>
+                  <mn>0</mn>
+                  <mn>1</mn>
+                  </msubsup>
+                <mo>d</mo><mi>x</mi>
+              </mrow>
+              <mrow>
+                <mo>=</mo>2<mi>&pi;</mi>
+
+                  <mrow>
+                    <mo>[</mo><mfrac><mrow><mrow><msup><mi>1</mi><mn>4</mn></msup></mrow>
+                    </mrow><mn>4</mn></mfrac>
+                    <mo>]</mo>
+                    
+                  </mrow>
+
+                
+                <mo>-</mo>2<mi>&pi;</mi>
+
+                  <mrow>
+                    <mo>[</mo><mfrac><mrow><mrow><msup><mi>0</mi><mn>4</mn></msup></mrow>
+                    </mrow><mn>4</mn></mfrac>
+                    <mo>]</mo>
+                    
+                  </mrow>
+
+              </mrow>
+              <mrow>
+                <mo>=</mo>
+
+                  <mrow>
+                    <mfrac><mrow><mi>&pi;</mi>
+                    </mrow><mn>2</mn></mfrac>
+                    
+                  </mrow>
+
+
+              </mrow>
+              </math>
+            </p>
+
+          </ul>
+          <p>The volume of the solid is<math><mrow><mo>=</mo><mrow><mfrac><mrow><mi>&pi;</mi></mrow><mn>2</mn></mfrac></mrow></mrow></math>.</p>
+
+
+        </div>
+        
+          
+      </div>
+    </section>
+<!--     area btn two curves -->
+<!--     disk method -->
+<!--     washer method -->
+<!--     vol by cross-sections -->
+<!--     MAYBE: 3d representations of one of these? -->
+
+    <!--     FOOTER -->
+    <div class="container" style="margin-top: auto;">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+          </li> 
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-body-secondary">About</a>
+          </li> 
+          <li class="nav-item">
+            <a href="theorems.html" class="nav-link px-2 text-body-secondary">Theorems</a>
+          </li> 
+          <li class="nav-item">
+            <a href="derivative.html" class="nav-link px-2 text-body-secondary">Derivatives</a>
+          </li> 
+          <li class="nav-item">
+            <a href="integral.html" class="nav-link px-2 text-body-secondary">Integrals</a>
+          </li> 
+          <li class="nav-item">
+            <a href="appliedintegral.html" class="nav-link px-2 text-body-secondary">Areas & Volumes</a>
+          </li> 
+        </ul> 
+        <p class="text-center text-body-secondary">© 2025 CalcTips</p> 
+      </footer>
+    </div>
+    <!--     FOOTER ENDS -->
+    
+        <!-- BOOTSTRAP JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    
+<!--     ILL MAYBE ADD A CHATBOT THAT CAN DO MATH -->
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="tDZRe4bc9J-I7dwMoKpHd";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+  </body>
+</html>

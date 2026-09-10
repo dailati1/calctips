@@ -1,0 +1,21 @@
+palette:
+font - courier prime (see style.css for different types)
+overall bg - #e6dbc7
+border accents - #5b8266
+hover accents - #8baaad
+hover font - #212922
+text color - #3e6259
+navbar color - #f4fff8
+box color - #4d4847
+
+
+this is the divider i use: <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+
+multplication: <mo>&#x22C5;</mo>
+integral: <mo>&#x222B;</mo>
+minus: <mo>&#x2212;</mo>
+space: <mspace width="1em"/>
+arrows: <mo>&#8594;</mo>
+apostrophe: ′
+less than: <mo>&lt;</mo>
+greater than or equal: <mo>&ge;</mo>

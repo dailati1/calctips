@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- LINKS -->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/calcisshortforcalculator.png?v=1747519739317"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+    
+    
+    <!-- SCRIPTS -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4723023059013068"
+     crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+    
+    
+    <title>Integral - CalcTips</title>
+
+    <!--     FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+        
+  </head>
+  <body>
+    
+      
+    <!--     NAVBAR -->
+    
+    <!-- NAVBAR how to make it work :< -->
+    <nav class="navbar navbar-expand-sm text-white bg-opacity-100">
+      <div class="container-fluid">
+        
+        <!-- SMALL MONITOR -->
+        <button
+          class="navbar-toggler navbar-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR FOR SMALL MONITOR -->
+        <div class="toggler-navbar" id="navbarSupportedContent">
+          <a href="index.html" class="text-center"> home </a>
+          <a href="about.html" class="text-center"> about </a>
+          <a href="theorems.html" class="text-center"> theorems </a>
+          <a href="derivative.html" class="text-center"> derivatives </a>
+          <a href="integral.html" class="text-center"> integrals </a>
+          <a href="appliedintegral.html" class="text-center"> areas & volumes </a>
+        </div>
+
+        <!-- START -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <!-- MAIN -->
+          <ul class="navbar-nav mb-lg-0">
+            <!-- HOME BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="index.html">home</a>
+            </li>
+            <!-- ABOUT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="about.html">about</a>
+            </li>
+
+            <!-- THEOREMS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="theorems.html">theorems</a>
+            </li>
+            
+            <!-- DERIVATIVES BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="derivative.html">derivatives</a>
+            </li>
+            
+            <!-- INTEGRALS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="integral.html">integrals</a>
+            </li>
+            
+            <!-- APPLIED INT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="appliedintegral.html">areas & volumes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+
+    <!--     NAVBAR ENDS -->
+    
+    <!--     HEADER -->
+<!--     brief desc of the topic -->
+    <section class="toppart">
+      <div class="container d-flex justify-content-center align-items-center">
+        <h1 class="bigtext">
+          integrals
+        </h1>
+      </div>
+    </section>
+    <div class="container-fluid align-items-center justify-content-center bigdescbox">
+        <p class="bigdesc" style="letter-spacing: 0.5px">
+          Integrals are the opposite of derivatives. They help you find the total amount of something, like area under a curve. If derivatives tell you how fast something is changing, integrals tell you how much has built up over time. You’ll use them to calculate things like distance, area, and accumulation. Think of an integral as adding up tiny pieces to find a whole.
+        </p>
+    </div>
+    <section class="mt-4">
+        <h2 class="disclaimer">
+          READ
+        </h2>
+      <div class="container-fluid d-flex align-items-center justify-content-center disclaimerbox">
+
+        <p class="disclaimertext" style="letter-spacing: 0.5px">
+          Recommended to have learned derivatives before reading!
+        </p>
+      </div>
+    </section>
+    <!--     HEADER ENDS -->
+    
+
+    <section class="cool-container">
+      <nav class="nav-container">
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+
+      </nav>
+      <div class="nav-redirects">
+        <div id="indefinite">
+          <h4>Indefinite</h4>
+          <p>Derivatives answer the question:</p>
+          <p style="font-weight: bold;"> "Given a function, what's the rate of change (slope) at any point?" </p>
+          <p>
+            So if you have a function like <i>f(x) = x<sup>2</sup></i>,
+            then its derivative is <br><i>f&#x2032;(x) = 2x</i>.
+            That means the slope of the curve <i>x<sup>2</sup></i>
+            at any point <i>x</i> is <i>2x</i>.
+          </p>
+
+          <p>Indefinite integrals do the <span style="font-weight:bold;">opposite</span> of derivatives. They answer:</p>
+          <p style="font-weight: bold;"> "Given the slope (derivative), what was the original function?" </p>
+          <p>So if you're told:</p>
+          <p style="font-weight: bold;"> "The derivative is 2𝑥; what function did that come from?" </p>
+          <p>You'd "undo" the derivative and get:</p>
+          <p style="text-align: center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mo>&#x222B;</mo><mn>2</mn><mi>x</mi><mo>d</mo><mi>x</mi><mo>=</mo>
+                <msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>C</mi>
+              </mrow>
+            </math>
+          </p>
+
+          <p>That "+ <i>C</i>" is called the <span style="font-weight:bold;">constant of integration</span>. Why?
+            Because if the original function was <i>x<sup>2</sup> + 5</i> or <i>x<sup>2</sup> - 10</i>,
+            the derivative would still be <i>2x</i>.
+          </p>
+
+          <p>So we don't know the exact starting function—just its general family. That's why we call it an indefinite integral.</p>
+
+          <p style="text-decoration: underline;">This is the formula:</p>
+          <p style="text-align:center;font-weight:bold;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mo>&#x222B;</mo>
+                <mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+                <mo>d</mo><mi>x</mi>
+                <mo>=</mo>
+                <mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+                <mo>+</mo><mi>C</mi>
+              </mrow>
+            </math>
+            , where
+            <math style="font-weight: bold;"  xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msup><mi>F</mi><mo>&#x2032;</mo></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="video1">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>This is everything already said in a video:</p>
+<iframe width="953" height="476" src="https://www.youtube.com/embed/MMv-027KEqU" title="Antiderivatives and indefinite integrals | AP Calculus AB | Khan Academy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+
+
+        <div id="power rule">
+          <h4 style="color: black; font-size:1.3rem; text-align:center; margin-top: 10px;">Power Rule</h4>
+          <p>If you have a function <i>f(x) = x<sup>n</sup></i>, where <i>n &ne; -1</i>, then:
+          </p>
+
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mo>&#x222B;</mo><msup><mi>x</mi><mi>n</mi></msup><mo>d</mo><mi>x</mi><mo>=</mo>
+                <mfrac>
+                  <msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup>
+                  <mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow>
+                </mfrac>
+                <mo>+</mo><mi>C</mi>
+              </mrow>
+            </math>
+          </p>
+
+          <p>This is essentially the <span style="font-weight:bold;">reverse</span> of the power rule for derivatives.</p>
+          <p>Why it works?<br> You already know that:</p>
+
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mfrac>
+                <mrow><mo>d</mo></mrow>
+                <mrow><mo>d</mo><mi>x</mi></mrow>
+              </mfrac>
+              <mo>(</mo>
+              <mfrac>
+                <msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup>
+                <mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow>
+              </mfrac>
+              <mo>)</mo><mo>=</mo><msup><mi>x</mi><mi>n</mi></msup>
+            </math>
+          </p>
+
+          <p>So, integrating <i>x<sup>n</sup></i> should give you that <span style="font-weight:bold;">original function</span> back (plus the constant of integration C).</p>
+
+          <p>⚠️<span style="text-decoration:underline;"> Special Case</span>: <i>n = -1</i><br>
+            This is the one exponent you <span style="font-weight:bold;">can't</span> use the power rule on.
+          </p>
+
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mo>&#x222B;</mo>
+                <msup><mi>x</mi><mn>-1</mn></msup>
+                <mo>d</mo><mi>x</mi><mo>=</mo>
+                <mo>&#x222B;</mo>
+                <mfrac><mn>1</mn><mi>x</mi></mfrac>
+                <mo>d</mo><mi>x</mi><mo>=</mo><mi>ln</mi><mo>|</mo><mi>x</mi><mo>|</mo><mo>+</mo><mi>C</mi>
+              </mrow>
+            </math>
+          </p>
+
+          <p>This is because the derivative of ln|x| is 1/x, not anything involving powers of x.</p>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+
+        <div id="video7">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o75AqTInKDU?si=h8ipndxUTu3rjpUM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="definite">
+          <h4>Definite</h4>
+          <p style="text-decoration:underline;">What is a Definite Integral?</p>
+          <p>While an indefinite integral gives you a <span style="font-weight:bold;">general</span> function plus a constant...</p>
+          <p>A definite integral gives you a <span style="font-weight:bold;">specific</span> number—the net area under the curve from one point to another:</p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <msubsup>
+                <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                <mi>a</mi>          <!-- Lower limit -->
+                <mi>b</mi>          <!-- Upper limit -->
+              </msubsup>
+              <mrow>
+                <mi>f</mi>
+                <mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+              <mo>d</mo><mi>x</mi>
+            </mrow>
+          </math>
+
+          </p>
+          <p>
+            <ul>
+             <li><i>f(x)</i> is your function (like <i>x<sup>2</sup></i>, <i>sin(x)</i>, etc.)</li>
+            <li><i>a</i> is the <span style="font-weight: bold">lower limit</span> of integration</li>
+            <li><i>b</i> is the <span style="font-weight: bold">upper limit</span> of integration</li>
+            <li><i>dx</i> tells you what you are integrating in respect to (<i>x</i>, <i>y</i>, etc.)</li>
+            </ul>
+          </p>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="solve">
+          <h4 style="color: black; font-size:1.3rem; text-align:center; margin-top: 10px;">How to Solve</h4>
+          <p><span style="font-weight: bold">Step 1: </span>Find the indefinite integral (the antiderivative):</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mo>&#x222B;</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>d</mo><mi>x</mi><mo>=</mo><mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>C</mi>
+             </mrow>
+            </math>
+          </p>
+          <p>...but since you're doing a <span style="font-weight: bold">definite</span> integral, <span style="font-weight: bold">you don't include the + C </span>because it cancels out in the next step.</p>
+          <p><span style="font-weight: bold">Step 2: </span>Plug in the upper and lower limits:</p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <msubsup>
+                <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                <mi>a</mi>          <!-- Lower limit -->
+                <mi>b</mi>          <!-- Upper limit -->
+              </msubsup>
+              <mi>f</mi>
+              <mo>(</mo><mi>x</mi><mo>)</mo>
+              <mo>d</mo><mi>x</mi>
+              <mo>=</mo>
+              <mi>F</mi>
+              <mo>(</mo><mi>b</mi><mo>)</mo>
+              <mo>&#x2212;</mo> <!-- Proper minus symbol -->
+              <mi>F</mi>
+              <mo>(</mo><mi>a</mi><mo>)</mo>
+            </mrow>
+          </math>
+          </p>
+          <p>This is called <span style="font-weight: bold">evaluating</span> the integral. </p>
+          <p> Example: </p>
+          <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;" src="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/integral-calculus-solution.gif?v=1747778422904"/>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="u-sub">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;"><i>u</i>-substitution</h4>
+          <p><span style="font-weight:bold;"><i>u</i>-substitution</span>, or <i>u</i>-sub for short, is like a <span style="font-weight:bold;">reverse chain rule</span>.</p>
+          <p>If you're integrating a <span style="font-weight:bold;">composite function</span> (something inside something), and the derivative of the inside is also in the integrand, you can simplify the problem by substituting part of the function with a new variable <i>u</i>. It helps make the integral easier to solve!</p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <msubsup>
+                <mo>&#x222B;</mo>   <!-- Integral symbol -->
+                <mn>0</mn>          <!-- Lower limit -->
+                <mn>2</mn>          <!-- Upper limit -->
+              </msubsup>
+              <mi>x</mi>
+              <mo>(</mo>
+              <msup>
+                <mrow>
+                  <mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+                </mrow>
+                <mn>3</mn>
+              </msup>
+              <mo>)</mo>
+              <mo>d</mo><mi>x</mi>
+            </mrow>
+          </math>
+          </p>
+          <p><span style="font-weight: bold">Step 1: </span>Let <i>u = 2x + 1</i></p>
+          <p>Then:
+            <ul>
+             <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mrow>
+                 <mfrac><mrow><mo>d</mo><mi>u</mi></mrow><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mi>2</mi><mo> ⇒</mo><mo>d</mo><mi>x</mi><mo>=</mo><mfrac><mi>1</mi><mi>2</mi></mfrac><mo>d</mo><mi>u</mi>
+               </mrow>
+               </math>
+              </li>
+            <li>Change Limits: 
+              <br> when <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mrow>
+                 <mi>x</mi><mo>=</mo><mi>0</mi><mi>,</mi><mspace width="1em"/><mi>u</mi><mo>=</mo><mi>2</mi><mo>(</mo><mi>0</mi><mo>)</mo><mo>+</mo><mi>1</mi><mo>=</mo><mi>1</mi>
+               </mrow>
+               </math>
+              <br> when <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+               <mrow>
+                 <mi>x</mi><mo>=</mo><mi>2</mi><mi>,</mi><mspace width="1em"/><mi>u</mi><mo>=</mo><mi>2</mi><mo>(</mo><mi>2</mi><mo>)</mo><mo>+</mo><mi>1</mi><mo>=</mo><mi>5</mi>
+               </mrow>
+               </math>
+            </li>
+            </ul>
+          </p>          
+          
+          <p><span style="font-weight: bold">Step 2: </span>Solve for <i>x</i> in terms of <i>u</i></p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mi>u</mi><mo>=</mo><mi>2</mi><mi>x</mi><mo>+</mo><mi>1</mi><mo> ⇒</mo><mi>x</mi><mo>=</mo><mfrac><mrow><mi>u</mi><mo>-</mo><mi>1</mi></mrow><mi>2</mi></mfrac>
+            </mrow>
+          </math>
+          </p>      
+      
+          <p><span style="font-weight: bold">Step 3: </span>Substitute everything into the integral</p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <!-- Original integral -->
+              <msubsup>
+                <mo>&#x222B;</mo> <!-- ∫ -->
+                <mn>0</mn>         <!-- lower limit -->
+                <mn>2</mn>         <!-- upper limit -->
+              </msubsup>
+              <mi>x</mi>
+              <mo>(</mo>
+              <mn>2</mn><mi>x</mi><mo>+</mo><mn>1</mn>
+              <mo>)</mo>
+              <msup>
+                <mo>&#x2062;</mo> <!-- invisible times -->
+                <mn>3</mn>
+              </msup>
+              <mo>d</mo><mi>x</mi>
+              <mo>=</mo>
+
+              <!-- Substituted integral (u-substitution) -->
+              <msubsup>
+                <mo>&#x222B;</mo>
+                <mn>1</mn>
+                <mn>5</mn>
+              </msubsup>
+              <mo>(</mo>
+              <mfrac><mrow><mi>u</mi><mo>-</mo><mn>1</mn></mrow><mi>2</mi></mfrac>
+              <mo>)</mo><mo>&#x22C5;</mo>
+              <msup>
+                <mi>u</mi>
+                <mn>3</mn>
+              </msup><mo>&#x22C5;</mo>
+              <mfrac><mi>1</mi><mi>2</mi></mfrac>
+              <mo>d</mo><mi>u</mi>
+              <mo>=</mo>
+
+              <!-- Evaluated result -->
+              <mfrac>
+                <mn>1</mn>
+                <mn>4</mn>
+              </mfrac>
+              <msubsup>
+                <mo>&#x222B;</mo>
+                <mn>1</mn>
+                <mn>5</mn>
+              </msubsup>
+              <mo>(</mo>
+              <mi>u</mi><mo>-</mo><mn>1</mn>
+              <mo>)</mo>
+              <msup>
+                <mi>u</mi>
+                <mn>3</mn>
+              </msup>
+              <mo>d</mo><mi>u</mi>
+            </mrow>
+          </math>
+          </p>
+          <p><span style="font-weight: bold">Step 4: </span>Expand and integrate</p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>(</mo><mi>u</mi><mo>-</mo><mi>1</mi><mo>)</mo><mo>=</mo><msup><mi>u</mi><mi>4</mi></msup><mo>-</mo><msup><mi>u</mi><mi>3</mi></msup>
+            </mrow>
+          </math>
+          </p>
+          <p>
+            So:
+          </p>
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow><mfrac><mn>1</mn><mn>4</mn></mfrac>
+               <msubsup>
+                 <mo>&#x222B;</mo>
+                 <mn>1</mn>
+                 <mn>5</mn>
+                </msubsup>
+                <mo>(</mo>
+                <msup>
+                  <mi>u</mi><mn>4</mn>
+                </msup>
+                <mo>-</mo>
+                <msup>
+                  <mi>u</mi><mn>3</mn>
+                </msup>
+                <mo>)</mo><mo>d</mo><mi>u</mi><mo>=</mo>
+                <mfrac>
+                  <mn>1</mn><mn>4</mn>
+                </mfrac>
+                <msubsup>
+                <mrow>
+                  <mo>[</mo>
+                  <mfrac>
+                    <msup>
+                      <mi>u</mi>
+                      <mn>5</mn>
+                    </msup>
+                    <mn>5</mn>
+                  </mfrac>
+                  <mo>-</mo>
+                  <mfrac>
+                    <msup>
+                      <mi>u</mi>
+                      <mn>4</mn>
+                    </msup>
+                    <mn>4</mn>
+                  </mfrac>
+                  <mo>]</mo>
+                </mrow>
+                <mn>1</mn>
+                <mn>5</mn>
+              </msubsup></mrow>
+            </math>
+          </p>
+          <p><span style="font-weight: bold">Step 5: </span>Plug in new limits</p>
+      <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow>
+              <mo>=</mo>
+              <mfrac>
+                <mn>1</mn><mn>4</mn>
+              </mfrac>
+              <mo>(</mo>
+                <mo>(</mo>
+                  <mfrac>
+                    <msup><mn>5</mn><mn>5</mn></msup><mn>5</mn>
+                  </mfrac>
+                    <mo>-</mo>
+                  <mfrac>
+                    <msup><mn>5</mn><mn>4</mn></msup><mn>4</mn>
+                  </mfrac>
+                <mo>)</mo><mo>-</mo>
+                <mo>(</mo>
+                  <mfrac>
+                    <msup><mn>1</mn><mn>5</mn></msup><mn>5</mn>
+                  </mfrac>
+                    <mo>-</mo>
+                  <mfrac>
+                    <msup><mn>1</mn><mn>4</mn></msup><mn>4</mn>
+                  </mfrac>
+                <mo>)</mo>
+              <mo>)</mo><mo>=</mo>
+              <mfrac>
+                <mn>1</mn><mn>4</mn>
+              </mfrac>
+              <mo>(</mo>
+                <mo>(</mo>
+                  <mn>625</mn><mo>-</mo><mn>156.25</mn>
+                <mo>)</mo><mo>-</mo>
+                <mo>(</mo>
+                  <mn>0.2</mn><mo>-</mo><mn>0.25</mn>
+                <mo>)</mo>
+              <mo>)</mo>
+            </mrow>
+          </math>
+          </p>
+          <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow><mo>=</mo><mn>117.2</mn></mrow>
+            </math>
+          </p>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>      
+        <div id="video2">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rCWOdfQ3cwQ?si=iODCLV0AJL-4cDp9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="fundamental-theorems">
+          <h4>Fundamental Theorems</h4>
+          <p><span style="font-weight: bold">Part 1: </span>Connection Between Derivatives and Integrals</p>
+          <p>If:</p>
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>F</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+                <msubsup>
+                <mo>&#x222B;</mo><mi>a</mi><mi>x</mi></msubsup>
+                <mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>d</mo><mi>t</mi>
+              </mrow>
+            </math>
+          </p> 
+          <p>Then:</p>
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mfrac><mi>d</mi><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+                <mo>(</mo>
+                <msubsup><mo>&#x222B;</mo><mi>a</mi><mi>x</mi></msubsup>
+                <mi>f</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>d</mo><mi>t</mi>
+                <mo>)</mo><mo>=</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <p>Taking the <span style="font-weight:bold;">derivative</span> of the area-so-far function just gives you the original function</p>
+          <p><span style="font-weight: bold">Part 2: </span>Computing Definite Integrals</p>
+          <p>If <i>F</i> is an antiderivative of <i>f</i>, then:</p>
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <msubsup><mo>&#x222B;</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>F</mi><mo>(</mo><mi>b</mi><mo>)</mo><mo>&#x2212;</mo><mi>F</mi><mo>(</mo><mi>a</mi><mo>)</mo>
+                
+              </mrow>
+            </math>
+          </p>
+          <p>To compute area, take the antiderivative and <span style="font-weight:bold;">plug in the bounds.</span></p>          
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>      
+        <div id="video3">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="953" height="476" src="https://www.youtube.com/embed/rfG8ce4nNh0" title="Integration and the fundamental theorem of calculus | Chapter 8, Essence of calculus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="net-change">
+          <h4>Net Change</h4>
+          <p>The <span style="font-weight:bold">Net Change Theorem</span> uses a definite integral to calculate how much a quantity has <span style="font-weight:bold">increased</span> or <span style="font-weight:bold">decreased</span> over time.</p>
+          <p style="text-decoration: underline;">This is the formula:</p><p>If a quantity <i>Q(t)</i> changes over time and its rate of change is given by <i>Q′(t), then:</i></p>
+          <p style="text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+              <msubsup><mo>&#x222B;</mo><mi>a</mi><mi>b</mi></msubsup><mi>Q</mi><mi>′</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>d</mo><mi>t</mi><mo>=</mo><mi>Q</mi><mo>(</mo><mi>b</mi><mo>)</mo><mo>&#x2212;</mo><mi>Q</mi><mo>(</mo><mi>a</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <p>Integrating the rate of change gives you <span style="font-weight:bold;">how much total change</span> happened between <i>t = a</i> and <i>t = b</i></p>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>      
+        <div id="video4">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="953" height="476" src="https://www.youtube.com/embed/df1Qr8pepx0" title="Net Change Theorem - Calculus Word Problems" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+          
+        </div>
+        <div id="total-change">
+          <h4>Total Change</h4>
+          <p>The <span style="font-weight:bold">Total Change Theorem</span> gives you the <span style="font-weight:bold">total amount accumulated</span> (like distance or total fluid), regardless of <span style="font-weight:bold">direction</span>.</p>
+          <p style="text-decoration: underline;">This is the formula:</p><p>If <i>Q(t)</i> is a <span style="font-weight:bold">rate of change</span>, and you're interested in the <span style="font-weight:bold">total accumulated amount</span> (no cancelling from positive and negative values,) use:</p>
+          <p style="font-weight:bold;text-align:center;">
+            Total Change
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+              <mo>=</mo>
+              <msubsup><mo>&#x222B;</mo><mi>a</mi><mi>b</mi></msubsup><mo>|</mo><mi>Q</mi><mi>′</mi><mo>(</mo><mi>t</mi><mo>)</mo><mo>|</mo><mo>d</mo><mi>t</mi>
+              </mrow>
+            </math>
+          </p>
+          <p style="text-decoration: underline;">Key Difference:</p>
+          <ul>
+            <li><span style="font-weight:bold;">Net change</span> allows positives and negatives to cancel out</li>
+            <li><span style="font-weight:bold;">Total change</span> takes the absolute value of the rate so that all change counts positively.</li>            
+          </ul>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>      
+        <div id="video5">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe src="https://www.youtube.com/embed/sTkzfzUHh74" title="Calculating the Total Change in a Function" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="average-value">
+          <h4>Average Value</h4>
+          <p>The <span style="font-weight:bold">average value</span>  of a continuous function <i>f(x)</i> over the interval <i>[a,b]</i> is given by</p>
+          <p style="text-decoration: underline;">This formula:</p>
+          <p style="font-weight:bold;text-align:center;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+              <msub><mi>f</mi><mi>avg</mi></msub>
+              <mo>=</mo><mfrac><mn>1</mn><mrow><mi>b</mi><mo>-</mo><mi>a</mi></mrow></mfrac>
+              <msubsup><mo>&#x222B;</mo><mi>a</mi><mi>b</mi></msubsup><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>d</mo><mi>x</mi>
+              </mrow>
+            </math>
+          </p>
+          <p>Think of it like:<br> "<span style="font-weight:bold;">Total area under the curve</span> divided by the <span style="font-weight:bold;">width of the interval</span> = <span style="font-weight:bold;">average height</span>."</p>
+          
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div> 
+        <div id="video6">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe src="https://www.youtube.com/embed/K-H86pxiBlk" title="Average Value of a Function on an Interval" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+
+      </div>
+    </section>
+<!--     indefinite -->
+<!--     definite -->
+<!--     fundamental theorems -->
+<!--     net change -->
+<!--     total change -->
+<!--     average value -->
+
+    
+    <!--     FOOTER -->
+    <div class="container" style="margin-top: auto;">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+          </li> 
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-body-secondary">About</a>
+          </li> 
+          <li class="nav-item">
+            <a href="theorems.html" class="nav-link px-2 text-body-secondary">Theorems</a>
+          </li> 
+          <li class="nav-item">
+            <a href="derivative.html" class="nav-link px-2 text-body-secondary">Derivatives</a>
+          </li> 
+          <li class="nav-item">
+            <a href="integral.html" class="nav-link px-2 text-body-secondary">Integrals</a>
+          </li> 
+          <li class="nav-item">
+            <a href="appliedintegral.html" class="nav-link px-2 text-body-secondary">Areas & Volumes</a>
+          </li> 
+        </ul> 
+        <p class="text-center text-body-secondary">© 2025 CalcTips</p> 
+      </footer>
+    </div>
+    <!--     FOOTER ENDS -->
+    
+            <!-- BOOTSTRAP JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    
+<!--     ILL MAYBE ADD A CHATBOT THAT CAN DO MATH -->
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="tDZRe4bc9J-I7dwMoKpHd";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+  </body>
+</html>

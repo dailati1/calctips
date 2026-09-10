@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    
+        <!-- LINKS -->
+    <link
+      rel="icon"
+      href="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/calcisshortforcalculator.png?v=1747519739317"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+
+    
+    
+    <!-- SCRIPTS -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4723023059013068"
+     crossorigin="anonymous"></script>
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    ></script>
+    <script defer src="script.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+    
+    
+    <title>Derivatives - CalcTips</title>
+
+    <!--     FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+        
+  </head>
+  <body>
+    
+    <!--     NAVBAR -->
+    
+    <!-- NAVBAR how to make it work :< -->
+    <nav class="navbar navbar-expand-sm text-white bg-opacity-100">
+      <div class="container-fluid">
+        
+        <!-- SMALL MONITOR -->
+        <button
+          class="navbar-toggler navbar-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- NAVBAR FOR SMALL MONITOR -->
+        <div class="toggler-navbar" id="navbarSupportedContent">
+          <a href="index.html" class="text-center"> home </a>
+          <a href="about.html" class="text-center"> about </a>
+          <a href="theorems.html" class="text-center"> theorems </a>
+          <a href="derivative.html" class="text-center"> derivatives </a>
+          <a href="integral.html" class="text-center"> integrals </a>
+          <a href="appliedintegral.html" class="text-center"> areas & volumes </a>
+        </div>
+
+        <!-- START -->
+        <div class="collapse navbar-collapse justify-content-center">
+          <!-- MAIN -->
+          <ul class="navbar-nav mb-lg-0">
+            <!-- HOME BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="index.html">home</a>
+            </li>
+            <!-- ABOUT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="about.html">about</a>
+            </li>
+
+            <!-- THEOREMS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="theorems.html">theorems</a>
+            </li>
+            
+            <!-- DERIVATIVES BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="derivative.html">derivatives</a>
+            </li>
+            
+            <!-- INTEGRALS BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="integral.html">integrals</a>
+            </li>
+            
+            <!-- APPLIED INT BUTTON -->
+            <li class="nav-item">
+              <a class="nav-link nav-button" href="appliedintegral.html">areas & volumes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--     NAVBAR ENDS -->
+    
+    <!--     HEADER -->
+<!--     brief desc of the topic -->
+    <section class="toppart">
+      <div class="container d-flex justify-content-center align-items-center">
+        <h1 class="bigtext">
+          derivatives
+        </h1>
+      </div>
+    </section>
+    <div class="container-fluid align-items-center justify-content-center bigdescbox">
+        <p class="bigdesc" style="letter-spacing: 0.5px">
+          Derivatives tell you how a function is changing at any given point. They're like a speedometer for math—they measure the rate of change or slope of a function. If you're looking at a graph, the derivative tells you how steep it is at a specific point. You'll use derivatives to find things like where a function is increasing or decreasing, where it’s flat, and where it curves up or down.
+        </p>
+    </div>
+    <section class="mt-4">
+        <h2 class="disclaimer">
+          READ
+        </h2>
+      <div class="container-fluid d-flex align-items-center justify-content-center disclaimerbox">
+
+        <p class="disclaimertext" style="letter-spacing: 0.5px">
+          For theorems relating to derivatives, check out the theorems page!
+        </p>
+      </div>
+    </section>
+    
+    <!--     HEADER ENDS -->
+    
+    <section class="cool-container">
+      <nav class="nav-container">
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>        
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div>
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+        <div class="sub">
+          <img class="nav-link-img" src="/staricon.webp" />
+          <a class="nav-link" href="#"></a>
+        </div>
+
+      </nav>
+      <div class="nav-redirects">
+        <div id="basic-rules">
+          <h4>Basic Rules</h4>
+          <p>The <span style="font-weight:bold;">basic rules of derivatives</span> are shortcuts that make it 
+            faster to find the derivative of most functions——without using 
+            the limit definition every time.
+          </p>
+          <p>These rules help you quickly find how fast a function
+            is changing (its derivative), especially when the function
+            involves powers, constants, sums, or products.
+          </p>
+          
+          <p><span style="font-weight: bold">1. Power Rule </span></p>
+          <p>For <i>f(x) = x<sup>n</sup></i>:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>n</mi><msup><mi>x</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup>
+             </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">Works for positive, negative, and fractional exponents (as long as the function is differentiable there).</li>
+          
+          <p><span style="font-weight: bold">2. Constant Rule </span></p>
+          <p>For <i>f(x) = c</i>, where <i>c</i> is a number:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mn>0</mn></mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">A constant doesn't change, so its rate of change is zero.</li>
+          
+          <p><span style="font-weight: bold">3. Constant Multiple Rule</span></p>
+          <p>For <i>f(x) = c &#x22C5; g(x)</i>:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>c</mi><mo>&#x22C5;</mo><mi>g</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">You can pull the constant outside the derivative.</li>
+          
+          <p><span style="font-weight: bold">4. Sum and Difference Rule</span></p>
+          <p>For <i>f(x) = g(x) &pm; h(x)</i>:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>&pm;</mo><mi>h</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">You can take the derivative of each term separately.</li>
+          
+          <p><span style="font-weight: bold">5. Product Rule</span></p>
+          <p>For <i>f(x) = g(x) &#x22C5; h(x)</i>:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>g</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>h</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">Use this when multipling two functions</li>
+          
+          <p><span style="font-weight: bold">6. Quotient Rule</span></p>
+          <p>For <math  xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+                <mfrac>
+                <mrow><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+                <mrow><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+                </mfrac></mrow> 
+            </math> :</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+                <mfrac>
+                <mrow><mi>g</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>-</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>h</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+                <mrow><msup><mrow><mo>[</mo><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>]</mo></mrow><mn>2</mn></msup></mrow>  
+                </mfrac>
+              </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">Use this when dividing two functions</li>
+          
+          <p><span style="font-weight: bold">7. Chain Rule</span></p>
+          <p>For <i>f(x) = g(h(x)) (a function inside a function)</i>:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+                <mi>g</mi><mi>′</mi><mo>(</mo><mrow><mi>h</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow>
+                &#x22C5;
+                <mi>h</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">Use this when you have <span style="font-weight:bold;">composite</span> functions
+          (like <i>sin(x<sup>2</sup>)</i>, <i>(3x+1)<sup>5</sup>, etc.)</i></li>
+          <p>
+            These rules are the <span style="font-weight:bold;">foundation of differentiation</span> and are used in everything from graphing curves to solving real-world problems in physics, economics, and engineering.
+          </p>
+          
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="video1">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video <br>(This section stops around 7:10):</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/AdLAkD-r9Rs?si=CMdwgGZMhRS6VGUG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="fxn-analysis">
+          <h4>Function Analysis</h4>          
+          <p>The <span style="font-weight:bold;">function analysis</span> describes how derivatives behave and how they relate to the shape and behavior of a function. These are especially useful when analyzing graphs, motion, or solving application problems.</p>
+          <p>Derivatives reveal important information about how a function <span style="font-weight:bold;">increases, decreases, curves</span>, and where it’s <span style="font-weight:bold">not smooth</span> or <span style="font-weight:bold">not smooth</span>.
+          </p>
+          <p><span style="font-weight: bold">1. Linearity of Derivatives</span></p>
+          <p>If <i>f(x)</i> and <i>g(x)</i> are both differentiable, and <i>c</i> is a constant:</p>
+           <p style="text-align:center;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+                <mo>[</mo><mi>c</mi><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>]</mo>
+                <mo>=</mo><mi>c</mi><mo>&#x22C5;</mo><mi>f</mi><mo>′</mo><mo>(</mo><mi>x</mi><mo>)</mo><mo>+</mo><mi>g</mi><mo>′</mo><mo>(</mo><mi>x</mi><mo>)</mo>
+              </mrow>
+            </math>
+          </p>
+          <li style="margin-bottom:20px;">You can take derivatives term-by-term, and pull constants out</li>
+          <p><span style="font-weight: bold">2. Differentiability Implies Continuity</span></p>
+          <p>If a function is differentaible at a point, then it must also be <span style="font-weight:bold;">continuous</span> there.</p>
+          <p>But:</p>
+          <p style="margin-bottom:20px">⚠️ A function can be <span style="font-weight:bold;">continuous</span> without being <span style="font-weight:bold;">differentiable</span> (e.g., a sharp corner like <i>|x|</i> at <i>x=0</i>).
+          </p>
+          <p><span style="font-weight: bold">3. Positive/Negative Derivatives and Monotonicity</span></p>
+          <p>If <i>f'(x) &gt; 0</i> on an interval, <i>f(x)</i> is <span style="font-weight:bold;">increasing</span> there.</p>
+          <p>If <i>f'(x) &lt; 0</i>, <i>f(x)</i> is <span style="font-weight:bold;">decreasing</span>.</p>
+          <li style="margin-bottom:20px;">This connects derivatives to <span style="font-weight:bold;">function behavior</span></li>
+          <p><span style="font-weight: bold">4. Second Derivative and Concavity</span></p>
+          <p>If <i>f''(x) &gt; 0</i>: the graph is <span style="font-weight:bold;">concave up</span> (shaped like a cup).</p>
+          <p>If <i>f''(x) &lt; 0</i>: the graph is <span style="font-weight:bold;">concave down</span> (shaped like a frown).</p>
+          <li style="margin-bottom:20px;">The second derivative helps analyze the <span style="font-weight:bold;">curvature</span> of the graph.</li>
+          <p><span style="font-weight: bold">5. Zero Derivative Doesn’t Always Mean a Maximum or Minimum</span></p>
+          <li>If <i>f'(x) = 0</i>, that point is <span style="font-weight:bold;">critical</span>, but it's not necessarily a max or min.</li>
+          <li style="margin-bottom:20px;">You need to check using <span style="font-weight:bold;">first or second derivative test.</span>.</li>
+          <p><span style="font-weight: bold">6. Derivatives Can Fail to Exist</span></p>
+          <p>A derivative <span style="font-weight:bold;">does not exist </span>at:</p>
+          <li>Sharp corners (like <i>f(x) = |x|</i> at <i>x = 0</i>)</li>
+          <li>Vertical tangents (like <i>f(x) = ∛x</i>)</li>          
+          <li style="margin-bottom:20px;">Discontinuities (like a jump or hole)</li>
+        </div>
+        
+        <div id="video2">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/15awMHeP1Yc?si=023gASH-JGfNbrob" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        
+        <div id="common-fxns">
+          <h4>Derivatives of Common Functions</h4>
+          <p>These are must-know derivatives for solving calculus problems efficiently.</p>
+          <p><span style="font-weight: bold">Polynomial & Power Functions</span></p>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><msup><mi>x</mi><mi>n</mi></msup><mo>)</mo><mo>=</mo>
+            <mi>n</mi><msup><mi>x</mi><mrow><mi>x</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow>
+            </math><br>(Works for any real number <i>n</i>, except <i>n=0</i> just gives <i>0</i></li>
+          <li style="margin-bottom:20px;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mi>c</mi><mo>)</mo><mo>=</mo><mn>0</mn></mrow>
+            </math><br>The derivative of any constant is <i>0</i></li>
+          <p><span style="font-weight: bold">Exponential Functions</span></p>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><msup><mi>e</mi><mi>x</mi></msup><mo>)</mo><mo>=</mo>
+            <msup><mi>e</mi><mi>x</mi></msup></mrow>
+            </math>
+          </li>
+          <li style="margin-bottom:20px;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><msup><mi>a</mi><mi>x</mi></msup><mo>)</mo><mo>=</mo>
+            <msup><mi>a</mi><mi>x</mi></msup><mo>ln</mo><mi>a</mi></mrow>
+            </math>, where <i>a &gt; 0</i>
+          </li>
+          <p><span style="font-weight: bold">Logarithmic Functions</span></p>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>ln</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+            <mfrac><mn>1</mn><mi>x</mi></mfrac></mrow>
+            </math>, for <i>x &gt; 0</i>
+          </li>
+          <li style="margin-bottom:20px;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><munder><mo>log</mo><mi>a</mi></munder><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo>ln</mo><mi>a</mi></mrow></mfrac></mrow>
+            </math>, where <i>a &gt; 0</i>, <i>a &ne; 1</i>
+          </li>
+          <p><span style="font-weight: bold">Trigonometric Functions</span></p>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>sin</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+              <mo>cos</mo><mi>x</mi></mrow></math>
+          </li>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>cos</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+              <mo>-sin</mo><mi>x</mi></mrow></math>
+          </li>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>tan</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+              <msup><mo>sec</mo><mn>2</mn></msup><mi>x</mi></mrow></math>
+          </li>
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>csc</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+              <mo>-csc</mo><mi>x</mi><mo>cot</mo><mi>x</mi></mrow></math>
+          </li>          
+          <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>sec</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+              <mo>sec</mo><mi>x</mi><mo>tan</mo><mi>x</mi></mrow></math>
+          </li>          
+          <li style="margin-bottom:20px;"><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+            <mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac>
+            <mo>(</mo><mo>cot</mo><mi>x</mi><mo>)</mo><mo>=</mo>
+              <msup><mo>-csc</mo><mn>2</mn></msup><mi>x</mi></mrow></math>
+          </li> 
+          <p><span style="font-weight: bold;">📌 Tips for Memorizing:</span></p>
+          <ul>
+            <li>The derivatives of functions starting with "co-" are negative! (like <i>cos(x) ⇒ -sin(x)</i>)</li>
+            <li>The derivatives of "secant" functions are just the secant times their respective co-secant functions (like <i>sec(x) ⇒ sec(x)tan(x)</i> and <i>csc(x) ⇒ -csc(x)cot(x)</i>)</li>
+            <li>Notice how in the example above they have the same format, but cosecant goes with cotangent <span style="font-weight: bold;">(co and co)</span></li>
+            <li>However, the "tangent" functions have the format of their respective secant functions squared (like <i>tan(x) ⇒ sec<sup>2</sup>(x)</i>)</li>
+            <li>But the best tip is to practice!</li>
+          </ul>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="video3">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe width="1284" height="722" src="https://www.youtube.com/embed/IvLpN1G1Ncg" title="Basic Differentiation Rules For Derivatives" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+          <!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="inverse-fxns">
+          <h4>Inverse Functions</h4>
+          <p>If a function <i>f</i> is</p>
+          <li>one-to-one (so it has an inverse <i>f<sup>-1</sup></i>),</li>
+          <li>differentiable at a point <i>x</i>, and</li>
+          <li>its derivative there is <span style="font-weight:bold;">non-zero</span> (<i>f'(x<sub>0</sub>) &ne; 0</i></li>
+          <p>Then its inverse is differentiable at the corresponding point <i>y<sub>0</sub> = f(x<sub>0</sub>)</i>.</p>
+          <p style="text-decoration: underline;">The derivative of the inverse is:</p>
+          <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+              <mo>(</mo><msup><mi>f</mi><mn>-1</mn></msup><mo>)</mo><mi>′</mi><mo>(</mo><msub><mi>y</mi><mn>0</mn></msub><mo>)</mo><mo>=</mo><mfrac>1<mrow><mi>f</mi><mi>′</mi><mo>(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>)</mo><mo>)</mo></mrow></mfrac>
+              </mrow>
+            </math>
+          <p style="text-decoration: underline;">Or, in function notation:</p>
+          <p style="text-align:center;">
+          <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+              <mo>(</mo><msup><mi>f</mi><mn>-1</mn></msup><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>f</mi><mi>′</mi><mo>(</mo><msup><mi>f</mi><mn>-1</mn></msup><mo>(</mo><mi>x</mi><mo>)</mo><mo>)</mo></mrow></mfrac>
+              </mrow>
+            </math>
+          </p>
+          <p style="font-weight:bold;">Why it Works?</p>
+          <p>Changing <i>x</i> by a tiny amount <i>Δx</i> changes <i>y = f(x)</i> by
+          <i style="font-weight:bold;">Δy ≈ f'(x)Δx</i></p>
+          <p>Reverse roles, <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mo>Δ</mo><mi>x</mi><mo>≈</mo><mfrac><mrow><mi>≈</mi><mo>Δ</mo><mi>y</mi></mrow><mrow><mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mfrac></mrow></math>
+          , so the inverse's slope is the reciprocal of <i>f′</i>.</p>
+           <p> Example: </p>
+          <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;" src="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/derivatives-inverses-example.png?v=1748049294592"/>
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="inverse-trig">
+            <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Inverse trig</h4>  
+          <p>Each inverse trig function has a specific derivative and domain where it applies.</p>
+          <ul>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mi>(</mi><msup><mo>sin</mo><mn>-1</mn></msup><mi>(</mi><mi>x</mi><mi>)</mi><mi>)</mi><mo>=</mo><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></math><ul><li>Domain: <i>-1 &lt; x &lt; 1</i></li></ul></li>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mi>(</mi><msup><mo>cos</mo><mn>-1</mn></msup><mi>(</mi><mi>x</mi><mi>)</mi><mi>)</mi><mo>=</mo><mn>-</mn><mfrac><mn>1</mn><mrow><msqrt><mrow><mn>1</mn><mo>-</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msqrt></mrow></mfrac></mrow></math><ul><li>Domain: <i>-1 &lt; x &lt; 1</i></li></ul></li>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mi>(</mi><msup><mo>tan</mo><mn>-1</mn></msup><mi>(</mi><mi>x</mi><mi>)</mi><mi>)</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></math><ul><li>Domain: All real numbers</li></ul></li>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mi>(</mi><msup><mo>cot</mo><mn>-1</mn></msup><mi>(</mi><mi>x</mi><mi>)</mi><mi>)</mi><mo>=</mo><mn>-</mn><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow></math><ul><li>Domain: All real numbers</li></ul></li>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mi>(</mi><msup><mo>sec</mo><mn>-1</mn></msup><mi>(</mi><mi>x</mi><mi>)</mi><mi>)</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>|</mi><mi>x</mi><mi>|</mi><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mfrac></mrow></math><ul><li>Domain: <i>x</i></li></ul></li>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mo>d</mo><mrow><mo>d</mo><mi>x</mi></mrow></mfrac><mi>(</mi><msup><mo>csc</mo><mn>-1</mn></msup><mi>(</mi><mi>x</mi><mi>)</mi><mi>)</mi><mo>=</mo><mn>-</mn><mfrac><mn>1</mn><mrow><mi>|</mi><mi>x</mi><mi>|</mi><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>-</mo><mn>1</mn></mrow></msqrt></mrow></mfrac></mrow></math><ul><li>Domain: <i>x</i></li></ul></li>
+            
+          </ul>
+          <p><span style="font-weight: bold;">📌 Tips for Memorizing:</span></p>
+          <ul>
+            <li>The derivatives of inverse functions starting with "co-" are negative!</li>
+            <li><span style="font-weight:bold;"><i>arcsin</i> and <i>arccos</i></span> have square roots of <i>1 - x<sup>2</sup></i></li>
+            <li><span style="font-weight:bold;"><i>arctan</i> and <i>arccot</i></span> have <i>1 + x<sup>2</sup></i></li>
+            <li><span style="font-weight:bold;"><i>arcsec</i> and <i>arccsc</i></span> have absolute values and square roots of <i>x<sup>2</sup> - 1</i> (Because they're only defined for <i>|x| &gt; 1</i></li>
+            <li>But the best tip is to practice!</li>
+          </ul>
+          
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="video4">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe width="1284" height="722" src="https://www.youtube.com/embed/TN4ybFiuV3k" title="Introduction to Inverse Functions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+        <div id="lhopitals-rule">
+          <h4>L'Hôpital's Rule</h4>      
+          <p><span style="font-weight:bold;">L'Hôpital's Rule</span> is a powerful tool for evaluating certain limits that give <span style="font-weight:bold;">indeterminate forms</span> like:</p>
+          <ul>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>0</mn><mn>0</mn></mfrac></mrow></math></li>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>∞</mn><mn>∞</mn></mfrac></mrow></math></li>  
+          </ul>
+          <p>It lets you <span style="font-weight:bold;">take the derivative</span> of the <span style="font-weight:bold;">top and bottom</span>——separately——and then re-evaluate the limit.</p>
+          <p style="text-decoration:underline;">Why Use it?</p>
+          <p>Some limits are hard to evaluate directly. If they result in indeterminate forms, L’Hôpital’s Rule simplifies them by focusing on how fast the numerator and denominator are changing.</p>
+          <p style="font-weight:bold;">🧾 The Rule (Formal Statement)</p>
+          <p>If:</p>
+          <ul>
+            <li>
+              <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><munder><mn>lim</mn><mrow><mi>x</mi><mo>&#8594;</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mfrac></mrow></math> results in
+              <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>0</mn><mn>0</mn></mfrac></mrow></math> or
+              <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>&infin;</mn><mn>&infin;</mn></mfrac></mrow></math>,
+            </li>
+            <li>
+              and <i>f</i> and <i>g</i> are <span style="font-weight:bold;">differentiable</span> near <i>a</i>,
+            </li>
+            <li>
+              and <i>g'(x) &ne; 0</i> near <i>a</i> (except maybe at <i>a</i>),
+            </li>
+          </ul>
+          <p>Then:</p>
+          <p style="text-align:center;font-weight:bold;">
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML">
+              <mrow>
+                <munder><mn>lim</mn><mrow><mi>x</mi><mo>&#8594;</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>g</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mfrac>
+                <mo>=</mo>
+                <munder><mn>lim</mn><mrow><mi>x</mi><mo>&#8594;</mo><mi>a</mi></mrow></munder><mfrac><mrow><mi>f</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow><mrow><mi>g</mi><mi>′</mi><mo>(</mo><mi>x</mi><mo>)</mo></mrow></mfrac>
+              </mrow>
+            </math>
+            (if the new limit exists or is <i>&pm; &infin;</i>)
+          </p>
+          <p style="font-weight:bold;">✅ Steps to Apply L’Hôpital’s Rule:</p>
+          <p><span style="font-weight:bold;">1. Check the limit</span> form. It must be:</p>
+          <ul>
+            <li><math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>0</mn><mn>0</mn></mfrac></mrow></math> or
+            <math style="font-weight: bold;" xmlns="http://www.w3.org/1998/Math/MathML"><mrow><mfrac><mn>∞</mn><mn>∞</mn></mfrac></mrow></math>  </li>
+          </ul>
+          <p><span style="font-weight:bold;">2. Differentiate</span> the numerator and denominator <span style="font-weight:bold;">separately</span></p>
+          <p><span style="font-weight:bold;">3. Try the limit again.</span></p>
+          <p><span style="font-weight:bold;">4.</span> Repeat if necessary (if it's still an indeterminate form).</p>
+          <p>Example:</p>
+          <img style="display: block; margin-left: auto; margin-right: auto; margin-bottom: 10px;" src="https://cdn.glitch.global/a569f80e-1feb-42d0-8b6b-3e4f7cc083a6/lhopitals-rule-indeterminate-0-0.webp?v=1748263992037"/>
+
+          <hr style="border:2px dashed #ff6347; width: 70%; margin:auto;">
+        </div>
+        <div id="video5">
+          <h4 style="color:black; font-size:1.3rem; text-align:center; margin-top: 10px;">Video</h4>
+          <p>For a more in-depth explanation with examples, here's a video:</p>
+          <iframe width="1284" height="722" src="https://www.youtube.com/embed/Gh48aOvWcxw" title="L&#39;hopital&#39;s rule" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!--           PUT A VIDEO PLSSSSSSSSS -->
+        </div>
+
+      </div>
+    </section>
+<!--     basic rules -->
+<!--     properties -->
+<!--     trig -->
+<!--     inverse trig -->
+<!--     l'hopital's rule -->
+
+    
+    <!--     FOOTER -->
+    <div class="container" style="margin-top: auto;">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link px-2 text-body-secondary">Home</a>
+          </li> 
+          <li class="nav-item">
+            <a href="about.html" class="nav-link px-2 text-body-secondary">About</a>
+          </li> 
+          <li class="nav-item">
+            <a href="theorems.html" class="nav-link px-2 text-body-secondary">Theorems</a>
+          </li> 
+          <li class="nav-item">
+            <a href="derivative.html" class="nav-link px-2 text-body-secondary">Derivatives</a>
+          </li> 
+          <li class="nav-item">
+            <a href="integral.html" class="nav-link px-2 text-body-secondary">Integrals</a>
+          </li> 
+          <li class="nav-item">
+            <a href="appliedintegral.html" class="nav-link px-2 text-body-secondary">Areas & Volumes</a>
+          </li> 
+        </ul> 
+        <p class="text-center text-body-secondary">© 2025 CalcTips</p> 
+      </footer>
+    </div>
+    <!--     FOOTER ENDS -->
+    
+    <!-- BOOTSTRAP JS -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"
+    ></script>
+    
+<!--     ILL MAYBE ADD A CHATBOT THAT CAN DO MATH -->
+    <script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="tDZRe4bc9J-I7dwMoKpHd";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+  </body>
+</html>
